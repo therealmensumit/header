@@ -20,6 +20,17 @@ $(document).ready(function(){
         $(this).addClass("active");
     });
 
+    $(".bars i").click(function(){
+        $("nav").fadeToggle();
+        $(".fa-bars").hide(500);
+        $(".fa-xmark").show(500);
+    });
+    $(".bars i.fa-xmark").click(function(){
+        $(".fa-bars").show(500);
+        $(".fa-xmark").hide(500);        
+    });
+        
+
     /* $(".drp").click(function(){
         $(".ar_down").hide(500);
     });
