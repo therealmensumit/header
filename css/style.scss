@@ -249,13 +249,19 @@ header{
     }
     nav{
         display: none;
-        position: absolute;
+        position: fixed;
         top: 60px;
         left: 0;
         height: 100%;
         background: #092294;
         z-index: 6;
         width: 50%;
+    }
+    header nav ul li{
+        display: block;
+    }
+    header nav ul li ol{
+        top: 40px;
     }
     .ban-slide{
         height: 350px;
