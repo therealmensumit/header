@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/a9d41929d5.js" crossorigin="anonymous"></script>
+    <title>Header</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">LOGO</a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#" id="home" class="active">Home</a></li>
+                    <li><a href="#" id="about">About</a></li>
+                    <li>
+                        <a href="#" id="service" class="drp">Services <i class="fas fa-caret-down ar_down"></i><i class="fas fa-caret-up ar_up" style="display: none;"></i></a>
+                        <ol>
+                            <li><a href="#">Windows Installation</a></li>
+                            <li><a href="#">Mac Installation</a></li>
+                            <li><a href="#">Networking</a></li>
+                            <li><a href="#">AMC</a></li>
+                            <li><a href="#">Data Recovery</a></li>
+                        </ol>                    
+                    </li>
+                    <li><a href="#" id="contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="banner-sec">
+        <div class="swiper ban-slide">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/banner1.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/banner2.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/banner3.jpg" alt="" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/banner4.jpg" alt="" />
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+
+    <section class="wel-sec">
+        <div class="container">
+            <div class="wel-main">
+                <div class="head">
+                    <h1>Welcome To AKP IT Solutions</h1>
+                    <small>12+ Years Of Working Experience In Quality Repair Services</small>
+                </div>
+                <div class="para">
+                    <p>AKPITSOLUTIONS PROVIDES ONSITE ALL TYPE OF LAPTOP AND DESKTOP REPAIR SERVICE AT LOW COST FOR PERSONAL, INDUSTRIAL AND ALL OFFICE CLIENTS IN AND AROUND DELHI/ NCR.WE ARE JUST A CALL AWAY.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="enq-sec">
+        <div class="container">
+            <div class="enq-main">
+                <div class="head">
+                    <h2>get a quote</h2>
+                </div>
+                <form action="" method="post">
+                    <div class="inp">
+                        <input type="text" placeholder="Name*" required />
+                    </div>
+                    <div class="inp">
+                        <input type="email" placeholder="Email*" required />
+                    </div>
+                    <div class="inp">
+                        <input type="number" placeholder="Phone*" required />
+                    </div>
+                    <div class="inp">
+                        <select name="" id="">
+                            <option value="" disabled selected>Please Select</option>
+                            <option value="">Data Recovery</option>
+                            <option value="">Laptop Reparing</option>
+                            <option value="">AMC</option>
+                        </select>
+                    </div>
+                    <textarea name="" id="" cols="30" rows="8" placeholder="Your Message"></textarea>
+                    <div class="butn">
+                        <button class="btn">Sumbit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="./js/jquery-3.6.0.min.js"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js"></script>
+</body>
+</html>

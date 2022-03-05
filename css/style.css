@@ -1,0 +1,283 @@
+@import url("https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+.container {
+  width: 1170px;
+  margin: auto;
+}
+
+section {
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+.btn {
+  padding: 12px 30px;
+  background-color: #007aff;
+  color: #fff;
+  border: 2px solid #007aff;
+  border-radius: 4px;
+  overflow: hidden;
+  z-index: 0;
+  position: relative;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn:hover {
+  color: #007aff;
+  font-weight: 500;
+}
+
+.btn::before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  z-index: -1;
+  background-color: #fff;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+.btn:hover::before {
+  height: 100%;
+}
+
+header {
+  background-color: #092294;
+  height: 98px;
+  z-index: 999;
+}
+
+header .logo {
+  float: left;
+}
+
+header .logo a {
+  font-size: 4rem;
+  font-weight: 600;
+  font-family: 'Khand', sans-serif;
+  color: beige;
+}
+
+header nav {
+  float: right;
+  margin: 34px 0;
+}
+
+header nav ul li a.active {
+  color: #ff3c00;
+}
+
+header nav ul li {
+  display: inline;
+  padding: 12px;
+  position: relative;
+}
+
+header nav ul li a i {
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+
+header nav ul li ol {
+  background-color: #092294;
+  width: 230px;
+  position: absolute;
+  left: 0;
+  top: 68px;
+  z-index: 99;
+  display: none;
+}
+
+header nav ul li ol li {
+  display: block;
+}
+
+header nav ul li ol li a {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 18px;
+  padding: 10px;
+  font-weight: 500;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+}
+
+header nav ul li ol li a:hover {
+  color: #ff3c00;
+}
+
+header nav ul li a {
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 20px;
+  padding: 10px;
+  font-weight: 500;
+  -webkit-transition: ease-in-out .2s;
+  transition: ease-in-out .2s;
+}
+
+header nav ul li a:hover {
+  color: #ff3c00;
+}
+
+.banner-sec {
+  width: 100%;
+  clear: both;
+}
+
+.banner-sec .ban-slide .swiper-pagination .swiper-pagination-bullet {
+  background: #fff;
+  width: 12px;
+  height: 12px;
+}
+
+.banner-sec .ban-slide .swiper-pagination .swiper-pagination-bullet-active {
+  background: #007aff;
+}
+
+.wel-sec {
+  padding: 60px 0;
+}
+
+.wel-sec .wel-main .head {
+  text-align: center;
+  font-family: 'khand';
+}
+
+.wel-sec .wel-main .head h1 {
+  font-size: 3rem;
+  color: #031979;
+}
+
+.wel-sec .wel-main .head small {
+  font-size: 1.5rem;
+}
+
+.wel-sec .wel-main .para {
+  margin-top: 15px;
+  text-align: center;
+}
+
+.wel-sec .wel-main .para p {
+  max-width: 900px;
+  margin: auto;
+  font-size: 16px;
+  letter-spacing: 1px;
+  line-height: 28px;
+}
+
+.enq-sec {
+  padding: 50px 0;
+  background: url(../images/bg-img.jpg) no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.enq-sec .enq-main .head {
+  text-align: center;
+}
+
+.enq-sec .enq-main .head h2 {
+  font-size: 3rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: 'Khand';
+}
+
+.enq-sec .enq-main form {
+  max-width: 500px;
+  padding: 50px;
+  border-radius: 6px;
+  background-color: #fff;
+}
+
+.enq-sec .enq-main form .inp {
+  margin: 7px 0;
+  width: 100%;
+}
+
+.enq-sec .enq-main form .inp input {
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  color: #000;
+  border-radius: 4px;
+  border: 2px solid #0268bb;
+}
+
+.enq-sec .enq-main form .inp select {
+  width: 100%;
+  border-radius: 4px;
+  border: 2px solid #0268bb;
+  padding: 15px;
+}
+
+.enq-sec .enq-main form .inp input:focus-visible, .enq-sec .enq-main form .inp select:focus-visible {
+  outline: none;
+}
+
+.enq-sec .enq-main form textarea {
+  margin: 7px 0;
+  width: 100%;
+  padding: 15px;
+  background-color: transparent;
+  color: #000;
+  border-radius: 4px;
+  border: 2px solid #0268bb;
+}
+
+.enq-sec .enq-main form textarea::-webkit-input-placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.enq-sec .enq-main form textarea:-ms-input-placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.enq-sec .enq-main form textarea::-ms-input-placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.enq-sec .enq-main form textarea::placeholder {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.enq-sec .enq-main form textarea:focus-visible {
+  outline: none;
+}
+
+.enq-sec .enq-main form .butn {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.enq-sec .enq-main form .butn button {
+  cursor: pointer;
+  width: 200px;
+  font-size: 18px;
+}
+/*# sourceMappingURL=style.css.map */
