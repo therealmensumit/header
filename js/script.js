@@ -56,3 +56,32 @@ var swiper = new Swiper(".ban-slide ", {
       clickable: true,
     },
   });
+
+
+  var swiper = new Swiper(".slide", {
+    slidesPerView: 1,
+    // slidesPerGroup: 1,
+    spaceBetween: 30,
+    loop: true,
+    freeMode: true,
+    autoPlay:true,
+     speed:700,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+      },
+    navigation: {
+        nextEl: ".slider .swiper-button-next",
+        prevEl: ".slider .swiper-button-prev",
+
+    },
+    /* pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    }, */
+    breakpoints: {
+        500: {
+          slidesPerView: 4,
+        },
+      }
+});
