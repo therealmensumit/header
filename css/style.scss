@@ -431,6 +431,16 @@ header{
         letter-spacing: 0px;
         line-height: 20px;
     }
+    .slider .swiper-button-next,
+    .slider .swiper-button-prev{
+        display: none;
+    }
+    .emp_Ben .heading h1{
+        font-size: 40px;
+    }
+    .emp_list ul li{
+        width: 100%;
+    }
     .enq-sec .enq-main form{
         padding: 40px 20px;
     }
