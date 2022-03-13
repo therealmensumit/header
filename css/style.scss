@@ -1,27 +1,33 @@
 @import url('https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     scroll-behavior: smooth;
 }
-.container{
+
+.container {
     width: 1170px;
     margin: auto;
 }
-section{
+
+section {
     overflow: hidden;
     font-family: 'khand';
 }
-a{
+
+a {
     text-decoration: none;
     color: #000;
 }
-ul, ol {
+
+ul,
+ol {
     list-style: none;
 }
-.btn{
+
+.btn {
     padding: 12px 30px;
     background-color: #007aff;
     color: #fff;
@@ -32,11 +38,13 @@ ul, ol {
     position: relative;
     transition: all .4s;
 }
-.btn:hover{
+
+.btn:hover {
     color: #007aff;
     font-weight: 500;
 }
-.btn::before{
+
+.btn::before {
     position: absolute;
     content: '';
     // display: inline-block;
@@ -48,48 +56,48 @@ ul, ol {
     background-color: #fff;
     transition: all .4s;
 }
-.btn:hover::before{
+
+.btn:hover::before {
     height: 100%;
 }
 
-
-header{
+header {
     background-color: #092294;
     height: 98px;
     z-index: 999;
-    .logo{
+    .logo {
         float: left;
     }
-    .logo a{
+    .logo a {
         font-size: 4rem;
         font-weight: 600;
         font-family: 'Khand', sans-serif;
         color: beige;
     }
-    .bars{
+    .bars {
         display: none;
         text-align: right;
         color: #fff;
         font-size: 30px;
     }
-    .bars i{        
+    .bars i {
         margin-top: 30px;
     }
     nav {
         float: right;
         margin: 34px 0;
-        ul{
-            li a.active{
+        ul {
+            li a.active {
                 color: rgb(255, 60, 0);
             }
-            li{
+            li {
                 display: inline;
                 padding: 12px;
                 position: relative;
-                a i{
+                a i {
                     transition: all .4s;
                 }
-                ol{
+                ol {
                     background-color: rgb(9, 34, 148);
                     width: 230px;
                     position: absolute;
@@ -97,9 +105,9 @@ header{
                     top: 68px;
                     z-index: 99;
                     display: none;
-                    li{
+                    li {
                         display: block;
-                        a{
+                        a {
                             color: #fff;
                             font-family: 'Open Sans', sans-serif;
                             font-size: 18px;
@@ -107,12 +115,12 @@ header{
                             font-weight: 500;
                             transition: ease-in-out .2s;
                         }
-                        a:hover{
+                        a:hover {
                             color: rgb(255, 60, 0);
                         }
                     }
                 }
-                a{
+                a {
                     color: #fff;
                     font-family: 'Open Sans', sans-serif;
                     font-size: 20px;
@@ -120,7 +128,7 @@ header{
                     font-weight: 500;
                     transition: ease-in-out .2s;
                 }
-                a:hover{
+                a:hover {
                     color: rgb(255, 60, 0);
                 }
             }
@@ -128,15 +136,17 @@ header{
     }
 }
 
-.slider{
+.slider {
     background-color: rgb(0, 167, 209);
     position: relative;
 }
-.slider .heading{
+
+.slider .heading {
     display: table;
     margin: auto;
 }
-.slider .heading h2{
+
+.slider .heading h2 {
     padding-top: 50px;
     text-transform: uppercase;
     font-size: 40px;
@@ -144,7 +154,8 @@ header{
     font-weight: 600;
     position: relative;
 }
-.slider .heading h2::before{
+
+.slider .heading h2::before {
     position: absolute;
     content: '';
     bottom: -4px;
@@ -154,22 +165,25 @@ header{
     height: 4px;
     background: linear-gradient(to left, rgb(247, 41, 41), #8098, rgb(150, 247, 40), rgba(250, 31, 122, 0.726))
 }
-.slider .heading p{
+
+.slider .heading p {
     padding-top: 10px;
     font: 16px;
     text-align: center;
 }
-.slider .slide{
+
+.slider .slide {
     overflow: hidden;
 }
-.slider .slide ul{
+
+.slider .slide ul {
     margin: 50px 0;
     display: flex;
     /* justify-content: center;
     align-items: center; */
-
 }
-.slider .slide ul li{
+
+.slider .slide ul li {
     text-align: center;
     width: 25%;
     padding: 24px;
@@ -178,49 +192,58 @@ header{
     background-color: #fff;
     box-shadow: 0 2px 4px #fafafab9;
 }
-.slider .slide ul li figure img{
+
+.slider .slide ul li figure img {
     width: 100px;
 }
-.slider .slide ul li figcaption{
+
+.slider .slide ul li figcaption {
     font-size: 24px;
     text-transform: uppercase;
     font-weight: 600;
     padding: 8px 0;
 }
-.slider .slide ul li span{
+
+.slider .slide ul li span {
     color: deepskyblue;
     text-transform: capitalize;
 }
-.slider .slide ul li p{
+
+.slider .slide ul li p {
     padding: 10px 0;
     text-align: justify;
 }
+
 .slider .swiper-button-next,
-.slider .swiper-button-prev{
+.slider .swiper-button-prev {
     color: rgba(255, 255, 255, 0.699);
 }
 
-.emp_Ben{
+.emp_Ben {
     background-color: #ebebeb;
     padding: 50px 0;
     overflow: hidden;
 }
-.emp_Ben .heading h1{
+
+.emp_Ben .heading h1 {
     text-align: center;
     font-size: 60px;
     color: #0b96cf;
 }
-.emp_Ben .heading h1 span{
+
+.emp_Ben .heading h1 span {
     color: #022742;
 }
-.emp_list ul{
+
+.emp_list ul {
     list-style: none;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 55px;
 }
-.emp_list ul li{
+
+.emp_list ul li {
     width: 31%;
     padding: 10px;
     margin: 50px 10px;
@@ -232,7 +255,8 @@ header{
     position: relative;
     z-index: 0;
 }
-.emp_list ul li::before{
+
+.emp_list ul li::before {
     position: absolute;
     content: '';
     top: 0;
@@ -244,76 +268,85 @@ header{
     border-radius: 6px 6px 0 0;
     transition: .5s;
 }
-.emp_list ul li:hover::before{
+
+.emp_list ul li:hover::before {
     height: 300px;
     border-radius: 6px;
 }
+
 .emp_list ul li:hover figcaption,
-.emp_list ul li:hover p{
+.emp_list ul li:hover p {
     color: #fff;
 }
-.emp_list ul li:hover img{
+
+.emp_list ul li:hover img {
     transform: scale(1.5);
 }
-.emp_list ul li .cont{
+
+.emp_list ul li .cont {
     padding: 0 22px;
 }
-.emp_list ul li figure{
+
+.emp_list ul li figure {
     margin-top: -75px;
     overflow: hidden;
     border-radius: 4px;
     z-index: 1;
 }
-.emp_list ul li figure img{
+
+.emp_list ul li figure img {
     z-index: 1;
     width: 300px;
     border-radius: 4px;
     transition: .3s;
 }
-.emp_list ul li figcaption{
+
+.emp_list ul li figcaption {
     font-size: 24px;
     color: #012643;
     padding-top: 7px;
     text-transform: capitalize;
 }
-.emp_list ul li p{
+
+.emp_list ul li p {
     font-size: 14px;
 }
 
-.banner-sec{
+.banner-sec {
     width: 100%;
     clear: both;
-    .ban-slide{
-        .swiper-pagination{
-            .swiper-pagination-bullet{
+    .ban-slide {
+        .swiper-pagination {
+            .swiper-pagination-bullet {
                 background: #fff;
                 width: 12px;
                 height: 12px;
             }
-            .swiper-pagination-bullet-active{
+            .swiper-pagination-bullet-active {
                 background: #007aff;
             }
         }
     }
 }
-.wel-sec{
+
+.wel-sec {
     padding: 60px 0;
-    .wel-main{
-        .head{
+    .wel-main {
+        .head {
             text-align: center;
             font-family: 'khand';
-            h1{
+            h1 {
                 font-size: 3rem;
                 color: #031979;
             }
-            small{
+            small {
                 font-size: 1.5rem;
             }
         }
-        .para{
+        .para {
             margin-top: 15px;
             text-align: center;
-            p{                
+            p {
                 max-width: 900px;
                 margin: auto;
                 font-size: 16px;
@@ -323,30 +356,31 @@ header{
         }
     }
 }
-.enq-sec{
+
+.enq-sec {
     padding: 50px 0;
     background: url(../images/bg-img.jpg) no-repeat;
     background-position: center;
     background-size: cover;
-    .enq-main{
-        .head{
+    .enq-main {
+        .head {
             text-align: center;
-            h2{
+            h2 {
                 font-size: 3rem;
                 color: #fff;
                 text-transform: capitalize;
                 font-family: 'Khand';
             }
         }
-        form{
+        form {
             max-width: 500px;
             padding: 50px;
             border-radius: 6px;
             background-color: #fff;
-            .inp{
+            .inp {
                 margin: 7px 0;
                 width: 100%;
-                input{
+                input {
                     width: 100%;
                     padding: 15px;
                     background-color: transparent;
@@ -354,17 +388,18 @@ header{
                     border-radius: 4px;
                     border: 2px solid rgb(2, 104, 187);
                 }
-                select{
+                select {
                     width: 100%;
                     border-radius: 4px;
                     border: 2px solid rgb(2, 104, 187);
                     padding: 15px;
                 }
-                input:focus-visible, select:focus-visible{
+                input:focus-visible,
+                select:focus-visible {
                     outline: none;
                 }
             }
-            textarea{
+            textarea {
                 margin: 7px 0;
                 width: 100%;
                 padding: 15px;
@@ -373,17 +408,17 @@ header{
                 border-radius: 4px;
                 border: 2px solid rgb(2, 104, 187);
             }
-            textarea::placeholder{
+            textarea::placeholder {
                 font-family: Arial, Helvetica, sans-serif;
                 color: #000;
             }
-            textarea:focus-visible{
+            textarea:focus-visible {
                 outline: none;
             }
-            .butn{
+            .butn {
                 margin-top: 10px;
                 text-align: center;
-                button{
+                button {
                     cursor: pointer;
                     width: 200px;
                     font-size: 18px;
@@ -393,15 +428,14 @@ header{
     }
 }
 
-
-@media (max-width: 767px){
-    .container{
+@media (max-width: 767px) {
+    .container {
         width: 90%;
     }
-    header .bars{
+    header .bars {
         display: block;
     }
-    nav{
+    nav {
         display: none;
         position: fixed;
         top: 60px;
@@ -411,37 +445,37 @@ header{
         z-index: 6;
         width: 50%;
     }
-    header nav ul li{
+    header nav ul li {
         display: block;
     }
-    header nav ul li ol{
+    header nav ul li ol {
         top: 40px;
     }
-    .ban-slide{
+    .ban-slide {
         height: 350px;
     }
-    .wel-sec .wel-main .head h1{
+    .wel-sec .wel-main .head h1 {
         font-size: 1.9rem;
     }
-    .wel-sec .wel-main .head small{
+    .wel-sec .wel-main .head small {
         font-size: 1.2rem;
     }
-    .wel-sec .wel-main .para p{
+    .wel-sec .wel-main .para p {
         font-size: 12px;
         letter-spacing: 0px;
         line-height: 20px;
     }
     .slider .swiper-button-next,
-    .slider .swiper-button-prev{
+    .slider .swiper-button-prev {
         display: none;
     }
-    .emp_Ben .heading h1{
+    .emp_Ben .heading h1 {
         font-size: 40px;
     }
-    .emp_list ul li{
+    .emp_list ul li {
         width: 100%;
     }
-    .enq-sec .enq-main form{
+    .enq-sec .enq-main form {
         padding: 40px 20px;
     }
 }
