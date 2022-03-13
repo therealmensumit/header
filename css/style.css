@@ -23,7 +23,8 @@ a {
   color: #000;
 }
 
-ul, ol {
+ul,
+ol {
   list-style: none;
 }
 
@@ -433,7 +434,8 @@ header nav ul li a:hover {
   padding: 15px;
 }
 
-.enq-sec .enq-main form .inp input:focus-visible, .enq-sec .enq-main form .inp select:focus-visible {
+.enq-sec .enq-main form .inp input:focus-visible,
+.enq-sec .enq-main form .inp select:focus-visible {
   outline: none;
 }
 
