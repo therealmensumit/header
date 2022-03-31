@@ -5,7 +5,6 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  scroll-behavior: smooth;
 }
 
 .container {
@@ -482,6 +481,13 @@ header nav ul li a:hover {
   cursor: pointer;
   width: 200px;
   font-size: 18px;
+}
+
+.toponclick {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #007bff74;
 }
 
 @media (max-width: 767px) {

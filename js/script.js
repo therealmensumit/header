@@ -43,6 +43,13 @@ $(document).ready(function() {
     $(".drp").click(function(){
         $(".ar_down").show(500);
     }); */
+
+    $('#scrollTop').click(function() {
+        $('html, body').animate({
+            scrollTop: $('header').offset().top
+        }, 2000);
+    });
+
 });
 
 

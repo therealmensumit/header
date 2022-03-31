@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
+    // scroll-behavior: smooth;
 }
 
 .container {
@@ -426,6 +426,13 @@ header {
             }
         }
     }
+}
+
+.toponclick {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #007bff74;
 }
 
 @media (max-width: 767px) {
