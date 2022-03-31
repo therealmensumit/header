@@ -43,7 +43,13 @@ $(document).ready(function() {
     $(".drp").click(function(){
         $(".ar_down").show(500);
     }); */
-
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 200) {
+            $('.toponclick').addClass('visible')
+        } else {
+            $('.toponclick').removeClass('visible')
+        }
+    });
     $('#scrollTop').click(function() {
         $('html, body').animate({
             scrollTop: $('header').offset().top

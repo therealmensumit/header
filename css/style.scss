@@ -433,6 +433,11 @@ header {
     bottom: 20px;
     right: 20px;
     background-color: #007bff74;
+    visibility: hidden;
+}
+
+.toponclick.visible {
+    visibility: visible;
 }
 
 @media (max-width: 767px) {
